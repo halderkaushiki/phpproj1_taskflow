@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="fld"><span class="i">✉️</span><input type="email" name="email" placeholder="Email address" required></div>
 <div class="fld"><span class="i">🔒</span><input type="password" name="password" placeholder="Password" required><button type="button" class="eye" onclick="var i=this.previousElementSibling;i.type=i.type==='password'?'text':'password'" aria-label="Show password">👁</button></div>
 <button class="btn"><?= $reg ? 'Create account' : 'Log in' ?></button>
-<?php if (!$reg): ?><div class="demo-sep"><span>or</span></div><button class="demo-btn" type="submit" name="demo" value="1" formnovalidate>Explore with a demo account</button><p class="demo-note">Sample tasks included. No account needed.</p><?php endif; ?>
+<?php if (!$reg): ?><div class="demo-sep"><span>or</span></div><button class="demo-btn" type="submit" name="demo" value="1" formnovalidate>Explore with a demo account</button><?php endif; ?>
 <p class="alt"><?= $reg ? 'Already have an account? <a href="login.php">Log in</a>' : 'New here? <a href="?register">Create an account</a>' ?></p>
 <footer class="ft">© <?= date("Y") ?> TaskFlow · Built by Kaushiki Halder</footer></form></main></div>
 <script>addEventListener("load",function(){document.getElementById("ld").classList.add("off")})</script></body></html>
