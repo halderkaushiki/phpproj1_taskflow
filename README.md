@@ -1,5 +1,5 @@
 # TaskFlow - PHP To-Do Manager
-Features: register/login (hashed passwords), per-user tasks, priorities, categories, due dates,
+Features: register/login (hashed passwords), one-click demo login with sample tasks, per-user tasks, priorities, categories, due dates,
 notes, search, filters, sorting, progress ring, overdue alerts, edit dialog, delete with undo,
 dark mode, keyboard shortcuts (N = new task, / = search), CSV export,
 loading screen, footer, pinned tasks, checklists/subtasks with progress, Today and Overdue smart filters, Pomodoro focus timer.
