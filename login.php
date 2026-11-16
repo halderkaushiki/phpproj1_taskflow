@@ -59,7 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TaskFlow</title><link rel="stylesheet" href="assets/style.css"></head>
 <body><div id="ld"><div class="sp"></div></div>
-<div class="lg"><aside class="lg-hero"><div class="brand"><span class="logo">✓</span>TaskFlow</div><h2>Organise your day.<br>Own your goals.</h2><p>A simple, focused workspace for your tasks, deadlines and ideas.</p><div class="pt">📌 Pin and prioritise what matters</div><div class="pt">✅ Checklists and smart filters</div><div class="pt">⏱ Built-in focus timer</div></aside>
+<div class="lg"><aside class="lg-hero"><div class="brand"><span class="logo">✓</span>TaskFlow</div><h2>Organise your day.<br>Own your goals.</h2><p>A simple, focused workspace for your tasks, deadlines and ideas.</p><ul class="feature-list" aria-label="TaskFlow features">
+<li class="pt"><span class="pt-icon" aria-hidden="true">📌</span><span class="pt-copy"><strong>Pin and prioritise</strong><small>Keep what matters in clear view</small></span></li>
+<li class="pt"><span class="pt-icon" aria-hidden="true">✅</span><span class="pt-copy"><strong>Checklists and smart filters</strong><small>Break work down and find it fast</small></span></li>
+<li class="pt"><span class="pt-icon" aria-hidden="true">⏱</span><span class="pt-copy"><strong>Built-in focus timer</strong><small>Make space for uninterrupted work</small></span></li>
+</ul></aside>
 <main class="lg-form"><form class="lg-card" method="post" onsubmit="var b=document.activeElement;if(!b||b.type!=='submit')b=this.querySelector('.btn');b.classList.add('busy')">
 <h1><?= $reg ? 'Create your account' : 'Welcome back 👋' ?></h1>
 <p class="sub"><?= $reg ? 'Start organising in under a minute.' : 'Log in to continue to your tasks.' ?></p>
